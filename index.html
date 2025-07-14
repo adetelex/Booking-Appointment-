@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WAT Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Book an Appointment</h1>
+  </header>
+
+  <main>
+    <h2>All times are in WAT</h2>
+    <form id="bookingForm">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div>
+        <label for="startTime">Start Time (WAT)</label>
+        <select id="startTime" name="startTime" required>
+          <option value="">--Select Time--</option>
+          <option value="09:00">9:00 AM</option>
+          <option value="10:00">10:00 AM</option>
+          <option value="11:00">11:00 AM</option>
+          <option value="12:00">12:00 PM</option>
+          <option value="13:00">1:00 PM</option>
+          <option value="14:00">2:00 PM</option>
+          <option value="15:00">3:00 PM</option>
+        </select>
+        <p class="timezone-note">Available between 9AM - 4PM</p>
+      </div>
+
+      <div>
+        <label for="duration">Duration</label>
+        <select id="duration" name="duration" required>
+          <option value="">--Select Duration--</option>
+          <option value="30">30 minutes</option>
+          <option value="60">60 minutes</option>
+        </select>
+      </div>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="response" class="message"></div>
+  </main>
+
+  <footer>
+    &copy; 2025 WAT Scheduling System | Developed by <strong>Ayorinde</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
