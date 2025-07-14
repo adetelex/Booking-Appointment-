@@ -1,4 +1,4 @@
-# WAT Scheduling System
+# Booking Appointment 
 
 This is a lightweight HTML/CSS/JS scheduling form with Google Calendar integration.
 
